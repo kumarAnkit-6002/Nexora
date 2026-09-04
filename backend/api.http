@@ -1,0 +1,81 @@
+POST  http://localhost:9080/register HTTP/1.1
+Content-Type:  application/json
+
+{
+    "username":"Damini95",
+    "password":"DaminiShukla",
+    "email":"vinodguru09@gmail.com",
+    "name" :"Vinod Fiza"
+}
+
+###
+
+
+POST  http://localhost:9080/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "vinodkesharwanicktd@gmail.com",
+   "password": "DaminiShukla95"
+
+}
+
+###
+
+GET http://localhost:9080/get_posts HTTP/1.1
+
+
+
+
+###
+POST http://localhost:9080/comment
+Content-Type: application/json
+
+{
+    "post_id" : "68f71972e326ad9577a73e06",
+    "comment_text ": "This is a comment",
+    "token": 
+}
+
+
+###
+
+GET http://localhost:9080/get_user_and_profile
+Content-Type: application/json
+
+{
+
+  "token":  "05f3c3159539ae43b3c7edb248d3b02b406f139177cd9c13cd43e71ecedd273b"
+
+}
+
+###
+
+POST http://localhost:9080/update_profile_data
+Content-Type: application/json
+
+{
+   "token":  "4b3109f4f7c04816e228c962217c1f49c2b922032d51bfe4eff54dcc5410beb0",
+   "bio": "Hello, this is this fff 222222222222222222222is very attravitve  this is my first jan vvvv i love you vinodguru ilove mynote book book I'm Vinod!",
+   "currentPost": "cto",
+   "pastWork" : [
+    {
+        "company": "Microsoft",
+        "position": "CTO",
+        "years": "2+"
+    }
+   ],
+   "education": [
+    {
+        "school": "ITT",
+        "degree": "B.Tech",
+        "fieldOfstudy": "2022-2025"
+
+    }
+   ]
+}
+
+###
+
+
+GET http://localhost:9080/user/get_all_users
